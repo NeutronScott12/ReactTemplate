@@ -1,0 +1,8 @@
+{
+	"short_name": "React App",
+	"name": "React Starter pack",
+	"start_url": "./index.html",
+	"display": "standlone",
+	"theme_color": "#000000",
+	"background_color": "#ffffff"
+}
