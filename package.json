@@ -1,89 +1,64 @@
 {
-	"name": "ReactImplentation",
-	"version": "1.0.0",
-	"description": "Starter pack for react",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"dev":
-			"cross-env NODE_ENV=development && webpack-dev-server --config ./webpack.config.js ",
-		"build":
-			"cross-env NODE_ENV=production && webpack --config ./webpack.config.js"
-	},
-	"keywords": [
-		"react",
-		"redux",
-		"rxjs",
-		"formik",
-		"babel",
-		"react-router-dom",
-		"semantic-ui-react",
-		"webpack",
-		"apollo",
-		"graphql"
-	],
-	"author": "",
-	"license": "ISC",
-	"devDependencies": {
-		"autoprefixer": "^7.2.3",
-		"babel-cli": "^6.26.0",
-		"babel-loader": "^7.1.2",
-		"babel-plugin-transform-class-properties": "^6.24.1",
-		"babel-plugin-transform-object-rest-spread": "^6.26.0",
-		"babel-preset-env": "^1.6.1",
-		"babel-preset-react": "^6.24.1",
-		"case-sensitive-paths-webpack-plugin": "^2.1.1",
-		"css-loader": "^0.28.7",
-		"extract-text-webpack-plugin": "^3.0.2",
-		"favicons-webpack-plugin": "0.0.7",
-		"file-loader": "^1.1.6",
-		"html-webpack-plugin": "^2.30.1",
-		"node-sass": "^4.7.2",
-		"postcss-js": "^1.0.1",
-		"postcss-loader": "^2.0.9",
-		"precss": "^2.0.0",
-		"redux-devtools-extension": "^2.13.2",
-		"redux-logger": "^3.0.6",
-		"redux-thunk": "^2.2.0",
-		"resolve-url-loader": "^2.2.1",
-		"sass-loader": "^6.0.6",
-		"style-loader": "^0.19.1",
-		"url-loader": "^0.6.2",
-		"webpack": "^3.10.0",
-		"webpack-dev-server": "^2.9.7",
-		"webpack-manifest-plugin": "^1.3.2",
-		"webpack-merge": "^4.1.1"
-	},
-	"dependencies": {
-		"apollo": "^0.2.2",
-		"apollo-cache-inmemory": "^1.1.4",
-		"apollo-client": "^2.1.0",
-		"apollo-link": "^1.0.6",
-		"apollo-link-context": "^1.0.3",
-		"apollo-link-http": "^1.3.1",
-		"apollo-link-ws": "^1.0.3",
-		"apollo-utilities": "^1.0.3",
-		"axios": "^0.17.1",
-		"babel-plugin-transform-export-extensions": "^6.22.0",
-		"cross-env": "^5.1.1",
-		"formik": "^0.10.5",
-		"graphql": "^0.13.1",
-		"graphql-tag": "^2.6.0",
-		"history": "^4.7.2",
-		"material-ui": "^1.0.0-beta.24",
-		"react": "^16.2.0",
-		"react-apollo": "^2.0.4",
-		"react-dom": "^16.2.0",
-		"react-helmet": "^5.2.0",
-		"react-redux": "^5.0.6",
-		"react-router-dom": "^4.2.2",
-		"react-router-redux": "^4.0.8",
-		"redux": "^3.7.2",
-		"redux-observable": "^0.17.0",
-		"rxjs": "^5.5.6",
-		"semantic-ui-css": "^2.2.12",
-		"semantic-ui-react": "^0.77.1",
-		"styled-components": "^2.3.0",
-		"subscriptions-transport-ws": "^0.9.4"
-	}
+  "name": "react_template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "graphql-codegen": "graphql-codegen --config codegen.yml"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.4.15",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "formik": "^2.2.9",
+    "graphql": "^15.6.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-router": "^6.0.0-beta.5",
+    "react-router-dom": "^6.0.0-beta.5",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.0.1",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "2.2.0",
+    "@graphql-codegen/introspection": "2.1.0",
+    "@graphql-codegen/typescript": "2.2.2",
+    "@graphql-codegen/typescript-apollo-client-helpers": "^2.1.4",
+    "@graphql-codegen/typescript-operations": "2.1.6",
+    "@graphql-codegen/typescript-react-apollo": "3.1.4",
+    "@types/jest": "^26.0.15",
+    "@types/jwt-decode": "^3.1.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-helmet": "^6.1.2",
+    "@types/react-router-dom": "^5.1.8",
+    "@types/styled-components": "^5.1.14",
+    "@types/yup": "^0.29.13",
+    "typescript": "^4.1.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
